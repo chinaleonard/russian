@@ -1,0 +1,20 @@
+#ifndef SHAPE_H
+#define SHAPE_H
+
+
+class shape
+{
+public:
+    shape(cell&,board& bd);
+    virtual~shape()=0;
+    virtual void   rotate();
+    int get_color()
+        {return color;}
+    cell&getacell(int n)
+    {return cells[n];}
+    void setacell(int n,cell &_cell;)
+    {cells[n]=_cell;}
+protected:
+};
+
+#endif // SHAPE_H
